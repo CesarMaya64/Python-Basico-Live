@@ -1,5 +1,5 @@
 #variableStr = "xD"
 
-print("Captura A:")
+print("Captura valor:")
 a = input()
 print(a)
