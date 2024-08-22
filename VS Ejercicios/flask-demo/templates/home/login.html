@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Maya">
+
+    <title>Login</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,700italic" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/animate.min.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/site.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/menu.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}" />
+
+    
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            //alert('xD 1');
+            try {
+                
+                //initCall();
+                
+            } catch (e) {
+                alert(e);
+            }
+        });
+        
+    </script>
+  </head>
+  <body>
+    <header class="main-header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg main-nav">
+                <a class="navbar-brand" href="">
+                    <img src="/static/images/logo_v2.png">                     
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar icon-bar-1"></span>
+                    <span class="icon-bar icon-bar-2"></span>
+                    <span class="icon-bar icon-bar-3"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainMenu">
+                    <ul id="elements_menu_principal" class="navbar-nav ml-auto text-uppercase f1">
+                        <li>
+                            <a href="./View/Login" class="active active-first">Login</a>
+                        </li>
+                        <li>
+                            <a href="/">inicio</a>
+                        </li>
+                        <li>
+                            <a href="#about">acerca de</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container-fluid" style="margin-top:50px;">
+        
+                <input name="ctl00$PlaceDesk$Change" type="hidden" id="PlaceDesk_Change" value="0" />
+                <input name="ctl00$PlaceDesk$Logged" type="hidden" id="PlaceDesk_Logged" value="0" />
+                <section id="service" class="home-section nopadding paddingtop-60">
+                    <div class="wow container">
+                        <div class="row">
+                            <div class="col-sm-4 offset-4">
+                                <div style="border-radius: 5px;" class="header-shadow">
+
+                                    <div class="wow fadeInDown animated" data-wow-offset="0">
+                                        
+                                        <img id="PlaceDesk_Logo" class="img-responsive" src="/static/images/logo_v1.png" />                                        
+                                    </div>
+                                    <div class="wow fadeInUp animated form-group text-center">
+                                        
+                                        <br />
+                                        <span id="PlaceDesk_Mensaje" style="color:Red;"></span>
+                                    </div>
+                                    <div class="wow fadeInUp animated form-group" data-wow-duration="2s" data-wow-offset="0">
+                                        <label class="control-label" for="Usuario"><i class="fas fa-user-md" aria-hidden="true"></i>&nbsp Usuario:</label>
+                                        <input type="text" id="usuarioText" tabindex="1" class="form-control input" />
+                                    </div>
+                                    <div class="wow fadeInUp animated form-group" data-wow-duration="2s" data-wow-offset="0">
+                                        <label class="control-label" for="Clave"><i class="fa fa-unlock-alt" aria-hidden="true"></i>&nbsp Contraseña:</label>
+                                        <input type="password" maxlength="20" id="usuarioPass" tabindex="2" class="form-control input" />
+                                    </div>
+                                    <div class="wow fadeInDown animated form-group" data-wow-duration="2s" data-wow-offset="0">
+                                        <input type="button" id="cmdEntrar" class="btn btn-success form-control" name="cmdEntrar" value="Entrar" tabindex="4" onclick="AjaxGetUsuario();" />
+                                        
+                                    </div>
+
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                </section>
+            
+    </div>
+
+
+    <!--  
+    <script type="text/javascript" src="/static/scripts/app_components/home/login/Ajax.js"> </script>
+    <script type="text/javascript" src="/static/scripts/app_components/home/login/Captura.js"> </script>
+    <script type="text/javascript" src="/static/scripts/app_components/home/login/Handlers.js"> </script>-->
+  </body>
+</html>

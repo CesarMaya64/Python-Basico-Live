@@ -1,0 +1,3 @@
+cd C:\Users\el_ma\OneDrive\Escritorio\Python-Basico-Live\VS Ejercicios\flask-demo
+set FLASK_APP=main.py
+C:/Users/el_ma/AppData/Local/Programs/Python/Python39/Scripts/flask run --port=5002
